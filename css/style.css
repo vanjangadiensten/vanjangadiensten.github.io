@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+body {
+    background-color: #141414;
+    overflow-x: hidden;
+}
+
+nav {
+    transition: background-color 0.2s ease-in; 
+}
+
+.font-julias-sans-one {
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ms-10 {
+    margin-left: 8%;
+}
+
+.me-10 {
+    margin-right: 8%;
+}
+
+.position-r {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.position-r .img {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: center;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.img {
+    width: 100%;
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+/* Create a black overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with some transparency */
+    z-index: 1;
+}
+
+.mid-left {
+    position: absolute;
+    top: 40%;
+    left: 16px;
+}
+
+.mid-left h1 {
+    font-size: 60px; /* Default size for large screens */
+    line-height: 1.2;
+}
+
+.mid-left p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.custom-shape-divider-bottom-1737470849 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737470849 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1737470849 .shape-fill {
+    fill: #141414;
+}
+
+.custom-shape-divider-bottom-1737548466 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737548466 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1737548466 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1737551996 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737551996 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1737551996 .shape-fill {
+    fill: #292929;
+}
+
+.bg-custom {
+    background-color: #292929;
+}
+.navbar-toggler-custom-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -9.5px) rotate(45deg);
+}
+/** Responsive styles **/
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mid-left h1 {
+        font-size: 40px;
+    }
+
+    .mid-left p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+    .custom-shape-divider-bottom-1737551996 svg {
+        height: 59px;
+    }
+    .custom-shape-divider-bottom-1737548466 svg {
+        height: 59px;
+    }
+    .custom-shape-divider-bottom-1737470849 svg {
+        height: 59px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .mid-left {
+        top: 30%; /* Adjust position for smaller screens */
+        left: 10px;
+    }
+
+    .mid-left h1 {
+        font-size: 28px; /* Smaller text size for mobile */
+        line-height: 1.3;
+    }
+
+    .mid-left p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem; /* Adjusted size for mobile */
+    }
+    .custom-shape-divider-bottom-1737551996 svg {
+        height: 58px;
+    }
+    .custom-shape-divider-bottom-1737548466 svg {
+        height: 58px;
+    }
+    .custom-shape-divider-bottom-1737470849 svg {
+        height: 58px;
+    }
+    .ms-10 {
+        margin-left: 2%;
+    }
+}
